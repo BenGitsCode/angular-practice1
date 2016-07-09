@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
 
   def angular
     render 'layouts/application'
+    root to: 'application#angular'
   end
   protect_from_forgery with: :exception
 end
