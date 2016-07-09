@@ -1,8 +1,11 @@
-angular.module('News', [])
+angular.module('News. ', [])
 .controller('MainCtrl', [
   '$scope',
   function($scope){
     $scope.test = 'Hello world!';
+    $scope.addPost = function(){
+     $scope.posts.push({title: 'A New post!', upvotes: 0});
+    };
     $scope.posts = [
       {title: 'post 1', upvotes: 5},
       {title: 'post 2', upvotes: 2},
