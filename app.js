@@ -1,11 +1,13 @@
-angular.module('News. ', [])
+angular.module('News', [])
 .controller('MainCtrl', [
   '$scope',
   function($scope){
     $scope.test = 'Hello world!';
     $scope.addPost = function(){
-     $scope.posts.push({title: 'A New post!', upvotes: 0});
-    };
+     if(!$scope.title || $scope.title === '') { return; }
+    $scope.posts.push({title: $scope.title, upvotes: 0});
+    $scope.title = '';
+};
     $scope.posts = [
       {title: 'post 1', upvotes: 5},
       {title: 'post 2', upvotes: 2},
