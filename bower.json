@@ -1,0 +1,17 @@
+{
+  "name": "thinkster-ang",
+  "homepage": "https://github.com/benjamski/angular-practice1",
+  "authors": [
+    "benjamski <benjadamski@gmail.com>"
+  ],
+  "description": "news app",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
