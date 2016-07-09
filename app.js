@@ -51,7 +51,7 @@ function($stateProvider, $urlRouterProvider) {
     };
   }
 ])
-.controller('PostCtrl', [
+.controller('PostsCtrl', [
   '$scope',
   '$stateParams',
   'posts',
